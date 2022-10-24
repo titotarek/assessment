@@ -10,6 +10,10 @@ import './mock';
 
 // Include styles.
 import './styles/index.css';
+// all element normally in all the browser  
+import './styles/normalize.css';
+// font Awesome library 
+import './styles/all.min.css';
 
 // Include application component.
 import App from './components/App';
