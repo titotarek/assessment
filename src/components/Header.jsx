@@ -7,9 +7,9 @@ export default function Header() {
         <h1>Lizard Global React Developer Assessment</h1>
     </header>
 
-        <section class="landing">
-            <div class="container">
-                    <div class="text">
+        <section className="landing">
+            <div className="container">
+                    <div className="text">
                         <h2>Welcome, To React World</h2>
                         <span>A JavaScript library for building user interfaces
                             Try out a preview of the React Docs!
@@ -17,12 +17,12 @@ export default function Header() {
                         </span>
                     </div>
 
-                        <div class="image">
+                        <div className="image">
                         <img  src={require("../img/landing-image.png")} alt="landing" />
                         </div>
             </div>
-                <span  class="go-down">
-                <i class="fas fa-angle-double-down fa-2x"></i>
+                <span  className="go-down">
+                <i className="fas fa-angle-double-down fa-2x"></i>
                 </span>
         </section>
 

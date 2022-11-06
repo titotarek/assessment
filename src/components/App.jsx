@@ -1,30 +1,20 @@
 
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import React from "react";
 import Header from "./Header";
-import Post from "./Post";
-import SinglePost from "./SinglePost"
 import Footer from "./Footer";
 import "../styles/index.css"
+import Detail from './Detail';
 function App() {
   
   return(
-  <div>
-
-{/* <BrowserRouter> */}
-{/* <Route exact  */}
-{/* // </BrowserRouter> */}
-
+  <BrowserRouter>
      <Header/>
-     <Routes>
-     <Route path='/single-post/:id'  element={<SinglePost />} />
-     </Routes>
-     {/* <About/> */}
-      <Post/> 
+      <Routes>
+      <Route path="/" element={  <Detail/> }/> 
+      </Routes>
      <Footer/> 
-
-  
-  </div>
+  </BrowserRouter>
    
   )
 }
